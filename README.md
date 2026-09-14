@@ -1,0 +1,1 @@
+A full-stack Student Management System built with Spring Boot, Spring Security, Spring Data JPA, Hibernate, MySQL, Thymeleaf, and Bootstrap. Features include secure authentication, student & course management, enrollment, dashboard analytics, pagination, validation, exception handling, and logging.
