@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.cwm.studentmanagement.dto.DashboardStatsDTO;
 import com.cwm.studentmanagement.repository.CourseRepository;
@@ -17,6 +18,7 @@ import com.cwm.studentmanagement.service.DashboardService;
 
 
 @Service
+@Transactional(readOnly = true)
 public class DashboardServiceImpl implements DashboardService {
 
 	private final EnrollmentRepository enrollmentRepository;

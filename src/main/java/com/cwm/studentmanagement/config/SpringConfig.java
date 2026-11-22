@@ -17,7 +17,10 @@ public class SpringConfig {
 			"/css/**",
 			"/images/**",
 			"/js/**",
-			"/error"
+			"/favicon.ico",
+			"/error",
+			"/actuator/health",
+			"/actuator/health/**"
 	};
 
 	@Bean

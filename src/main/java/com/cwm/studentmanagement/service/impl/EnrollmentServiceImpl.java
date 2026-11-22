@@ -12,6 +12,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.cwm.studentmanagement.dto.CourseDTO;
 import com.cwm.studentmanagement.dto.EnrollmentDTO;
@@ -26,6 +27,7 @@ import com.cwm.studentmanagement.repository.StudentRepository;
 import com.cwm.studentmanagement.service.EnrollmentService;
 
 @Service
+@Transactional
 public class EnrollmentServiceImpl implements EnrollmentService {
 	private static final Logger log = LoggerFactory.getLogger(EnrollmentServiceImpl.class);
 
