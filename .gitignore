@@ -4,6 +4,14 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Local secrets & overrides ###
+application-local.properties
+**/application-local.properties
+.env
+.env.*
+logs/
+*.log
+
 ### STS ###
 .apt_generated
 .classpath
@@ -14,7 +22,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
